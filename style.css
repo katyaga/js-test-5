@@ -1,0 +1,106 @@
+.main {
+    min-height: calc(100vh - 140px);
+    background-color: aliceblue;
+    padding-bottom: 40px;
+}
+
+header .navbar-brand {
+    text-transform: uppercase;
+    /*margin-right: 60px;*/
+    color: mediumblue;
+}
+
+header .btn {
+    margin-left: 20px;
+}
+
+header .nav-item {
+    margin-left: 30px;
+}
+
+.greeting {
+    display: block;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main .container {
+    padding-top: 40px;
+}
+
+.list-group {
+    padding: 30px 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 60px;
+    text-align: center;
+    height: auto;
+    border-radius: 30px;
+}
+
+.list-group-item:first-child,
+.list-group-item:last-child {
+    border-radius: 30px;
+}
+
+.list-group-item img {
+    margin: 0 auto;
+}
+
+.list-group-item .btn {
+    width: 250px;
+    border-radius: 3px;
+    margin: 0 -5px -40px;
+    align-self: center;
+}
+
+.video {
+    text-align: center;
+}
+
+.footer {
+    background-color: silver;
+}
+
+.footer .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.reg-form button {
+    margin-top: 25px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    margin-top: 60px;
+}
+
+.login-form button {
+    /*margin: 30px 0 55px;*/
+}
+
+@media (min-width: 768px) {
+    .list-group-item:nth-child(2n) {
+        margin-left: 60px;
+    }
+}
