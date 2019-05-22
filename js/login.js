@@ -8,6 +8,7 @@ function getUsers() {
   return [];
 }
 
+// Ф-ция проверяет правильность введённых данных для входа на сайт
 function logIn() {
   const users = getUsers('users');
   const login = document.querySelector('.login-login').value;

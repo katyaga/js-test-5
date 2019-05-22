@@ -5,6 +5,7 @@ function getUsers() {
   } return [];
 }
 
+// Ф-ция заполняет таблицу пользователей (стр. Пользователи) из данных localstorage
 function createUsers() {
   const users = getUsers('users');
   for (let i = 0; i < users.length; i += 1) {

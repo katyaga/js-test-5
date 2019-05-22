@@ -1,5 +1,6 @@
 const regButton = document.querySelector('.reg-button');
 
+// Ф-ция получения информации из localstorage, возвращает массив пользователей
 function getUsers() {
   const users = localStorage.getItem('users');
   if (users) {
@@ -7,6 +8,7 @@ function getUsers() {
   } return [];
 }
 
+// Ф-ция сохраняет в localstorage массив пользователей
 function saveUsers(users) {
   localStorage.setItem('users', JSON.stringify(users));
 }
@@ -26,7 +28,7 @@ function saveUser() {
   }
 
   const users = getUsers();
-  // let user;
+  // Массив пользователей с паролем, который ввёл текущий пользователь
   const exists = users.filter(item => item.login === userLogin);
 
   if (userLogin.length < 1 || userEmail.length < 1) {
